@@ -10,4 +10,4 @@ const Book = sequelize.define("Book", {
   comment: { type: STRING, allowNull: false },
 });
 
-module.exports = { Article, Author };
+module.exports = { Book };

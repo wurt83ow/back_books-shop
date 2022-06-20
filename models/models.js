@@ -12,4 +12,22 @@ const Book = sequelize.define("Book", {
   img_name: { type: STRING, allowNull: false },
 });
 
-module.exports = { Book };
+const Partner = sequelize.define("Book", {
+  id: { type: INTEGER, primaryKey: true, autoIncrement: true },
+  title: { type: STRING, allowNull: false },
+  price: { type: STRING, allowNull: false },
+});
+
+const Topic = sequelize.define("Book", {
+  id: { type: INTEGER, primaryKey: true, autoIncrement: true },
+  descr: { type: STRING, allowNull: false },
+});
+
+const Article = sequelize.define("Book", {
+  id: { type: INTEGER, primaryKey: true, autoIncrement: true },
+  title: { type: STRING, allowNull: false },
+  descr: { type: STRING, allowNull: false },
+  date: { type: STRING, allowNull: false },
+});
+
+module.exports = { Book, Partner, Topic, Article };
